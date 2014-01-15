@@ -17,9 +17,13 @@ Constructor receives one argument - object hash containing configuration options
 
 #### <a name="inbox.connect"></a>connect
 
+`inbox.connect(readOnly);`
+
 `inbox.connect();`
 
-Connects to the IMAP server. After successful connection is made, `inbox` object emits `connected` event. This method has no arguments.
+Connects to the IMAP server. After successful connection is made, `inbox` object emits `connected` event.
+
+*readOnly* Boolean flag that indicates that inbox should be open in read-only mode. Defaults to `false`
 
 **Returns** Promise resolved with the inbox instance
 
