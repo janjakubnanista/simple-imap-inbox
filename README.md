@@ -15,7 +15,7 @@ Simple IMAP inbox with watch functionality.
 
 Constructor receives one argument - object hash containing configuration options for underlying `Imap` object. See [node-imap](https://github.com/mscdex/node-imap "node-imap GitHub repo") for available configuration options.
 
-#### connect
+#### <a name="inbox.connect"></a>connect
 
 `inbox.connect();`
 
@@ -124,6 +124,12 @@ Fetches messages from server by UIDs. Returns a promise resolved with array of f
 `inbox.imap;`
 
 Underlying `Imap` instance
+
+#### inbox
+
+`inbox.inbox;`
+
+Instance of `Box` class from `node-imap` library. See [node-imap](https://github.com/mscdex/node-imap) for more information on this class. This property is not null after an inbox has been opened via [Inbox.connect](#inbox.connect) method.
 
 ### Message
 
