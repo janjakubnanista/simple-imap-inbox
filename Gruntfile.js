@@ -11,14 +11,6 @@ module.exports = function (grunt) {
                 tasks: ['shell:test']
             }
         },
-        jsdoc : {
-            dist : {
-                src: ['src/**/*.js'],
-                options: {
-                    destination: 'doc'
-                }
-            }
-        },
         jshint: {
             options: {
                 jshintrc: '.jshintrc',
@@ -28,14 +20,6 @@ module.exports = function (grunt) {
                 'Gruntfile.js',
                 'src/**/*.js'
             ]
-        },
-        uglify: {
-            dist: {
-                files: {
-                    'src/jolokia.min.js': ['src/jolokia.js'],
-                    'src/drivers/jolokia.cubism.min.js': ['src/drivers/jolokia.cubism.js']
-                }
-            }
         },
         shell: {
             test: {
