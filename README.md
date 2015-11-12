@@ -1,5 +1,4 @@
-Simple IMAP inbox
-=================
+# Simple IMAP inbox
 
 Simple IMAP inbox with watch functionality.
 
